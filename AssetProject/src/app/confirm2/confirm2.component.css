@@ -1,0 +1,28 @@
+.head{
+    height: 50px;
+    background-color: rgb(14, 14, 141);
+    -webkit-text-fill-color: white;
+    padding: 8px;
+    text-decoration-style:double;
+}
+
+.body{
+    text-align: center;
+    padding-top: 200px;
+    
+}
+.button1 {
+    position: left;
+    top:50%;
+    -webkit-text-fill-color: rgb(232, 227, 227);
+    background-color:#0b0b73;
+    color: #fff;
+    border:none; 
+    border-radius:10px; 
+    padding:15px;
+    min-height:30px; 
+    min-width: 120px;
+  }
+  p.p1{
+    font-weight: bold;
+  }

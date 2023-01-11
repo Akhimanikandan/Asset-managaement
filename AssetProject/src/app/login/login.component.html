@@ -1,0 +1,23 @@
+<form [formGroup]="Form"
+(ngSubmit)="login()">
+    <div class="container">
+      <img src="../../assets/bytestrone.png" alt="bytestrone logo" />
+      <div class="username">
+        <label for="username" class="required"><b>Username</b></label>
+        <input type="text"[(ngModel)]="employee.username " formControlName="username"/>
+
+      </div>
+  
+      <div class="password">
+        <label for="password" class="required"><b>Password</b></label>
+        <input type="password"[(ngModel)]="employee.password " formControlName="password" 
+      
+       />
+      </div>
+  
+      <button type="submit" (click)="login()">Login</button>
+      <p class="copyright">copyright &#169; 2022 Bytestrone.</p>
+      <p id="allRights">All rights reserved.</p>
+    </div>
+  </form>
+  

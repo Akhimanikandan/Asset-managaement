@@ -1,0 +1,29 @@
+<div class="box">
+    <h1>CANCELLATION LIST</h1>
+    </div><br>
+    <div id="a1" >
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">REQUESTID</th>
+            <th scope="col">SOFTWARENAME</th>
+            <th scope="col">CATEGORY</th>
+            <th scope="col">MANUFACTURER</th>
+            
+          </tr>
+        </thead>
+        <tbody *ngFor="let asset of request">
+          <tr >
+              <td>{{asset.reqId}}</td>
+            <td>{{asset.softwareName}}</td>
+            <td>{{asset.category}}</td>
+            <td>{{asset.manufacturer}}</td>
+            <!-- <td (click)="release(asset.reqId)"><i class="fa-solid fa-xmark"></i></td> -->
+            
+          </tr>
+          
+        </tbody>
+      </table>
+    <button (click)="backtohome()">Back</button>
+    </div>
+

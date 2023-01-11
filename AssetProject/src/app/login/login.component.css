@@ -1,0 +1,64 @@
+.container {
+    width: 30vw;
+    height: 70vh;
+    display: grid;
+  
+    background-color: #1f378c;
+    border-radius: 20pt;
+    margin-top: 19vh;
+    margin-bottom: 19vh;
+    margin-right: 35vw;
+    margin-left: 35vw;
+    color: white;
+    align-items: center;
+    text-align: left;
+  }
+  button {
+    place-self: center;
+    background-color: #27a572;
+    height: 5vh;
+    color: white;
+  }
+  input {
+    height: 4vh;
+    width: 20vw;
+    border-radius: 18pt;
+  }
+  button {
+    height: 6vh;
+    width: 20.2vw;
+    border-radius: 18pt;
+    margin-top: 5vh;
+   
+  }
+  
+  img {
+    place-self: center;
+    margin-top: 1vh;
+    width: 20vw;
+  }
+  .username {
+    place-self: center;
+    margin-top: 7vh;
+    display: flex;
+    flex-direction: column;
+    font-style:italic;
+  }
+  .password {
+    place-self: center;
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    font-style:italic;
+  }
+  .copyright {
+    place-self: center;
+    font-size: 2vh;
+    margin-top: 12vh;
+  }
+  #allRights {
+    font-size: 2vh;
+    place-self: center;
+    margin-bottom: 1vh;
+  }
+  

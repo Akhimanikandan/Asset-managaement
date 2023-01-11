@@ -1,0 +1,67 @@
+<h2>AssetManagement>Software</h2><br>
+
+<div class="search">
+  <span class="fa fa-search">
+
+
+  </span>
+  <input type="text" [(ngModel)]="searchResult" placeholder="Search software">
+
+  <!-- <div class="grey">
+    <i class="fa-sharp fa-solid fa-filter grey"></i>
+      <b>FILTER</b>
+    
+  </div> -->
+
+
+
+</div><br>
+
+
+
+
+<div><br>
+  <button type="button" class="button4" (click)="Openrequestlist()">Openrequest list</button>
+  <button type="button" class="button5" (click)="Releaserequest()">Release request</button>
+</div>
+<div id="a1">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">NAME</th>
+        <th scope="col">Category</th>
+        <th scope="col">Manufacturer</th>
+        <th scope="col"> version </th>
+        <th scope="col">Subversion</th>
+        <th scope="col"> Licence type </th>
+        <th scope="col">Action </th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let asset of list  | paginate
+    : {
+        itemsPerPage: 5,
+        currentPage: currentPage,
+        totalItems: count
+      }">
+      <tr>
+
+        <td>{{asset.id}}</td>
+        <td>{{asset.softwareName}}</td>
+        <td>{{asset.category}}</td>
+        <td>{{asset.manufacturer}}</td>
+        <td>{{asset.version}}</td>
+        <td>{{asset.subversion}}</td>
+        <td>{{asset.licenceType}}</td>
+        <td (click)="raise(asset.id)"><i class="fa-solid fa-hand"></i></td>
+
+
+
+      </tr>
+
+    </tbody>
+  </table>
+  <pagination-controls previousLabel="Previous" nextLabel="Next"
+    (pageChange)="onTableDataChange($event)"></pagination-controls>
+  <!-- <button (click)="next()">Next</button> -->
+</div>

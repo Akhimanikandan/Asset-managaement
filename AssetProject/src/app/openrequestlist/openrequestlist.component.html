@@ -1,0 +1,32 @@
+<div id="a2">
+  <h2>OPEN REQUEST LIST</h2>
+</div>
+  
+    
+  <div id="a1" >
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">REQUESTID</th>
+          <th scope="col">SOFTWARENAME</th>
+          <th scope="col">CATEGORY</th>
+          <th scope="col">MANUFACTURER</th>
+          <th scope="col">CANCEL</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let asset of request">
+        <tr >
+            <td>{{asset.reqId}}</td>
+          <td>{{asset.softwareName}}</td>
+          <td>{{asset.category}}</td>
+          <td>{{asset.manufacturer}}</td>
+          <td (click)="cancel(asset.reqId)"><i class="fa-solid fa-xmark"></i></td>
+          
+  
+          
+        </tr>
+        
+      </tbody>
+    </table>
+  
+  </div>

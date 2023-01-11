@@ -1,0 +1,24 @@
+
+<div class="head">
+<h5>CONFIRM SOFTWARE REQUEST</h5>
+
+</div>
+
+<div class="body" *ngIf="asset" >
+ 
+   <div class="p1">
+     
+    <p class="light">Please confirm the requisition of <br></p>
+      <p class="thicker">{{asset.softwareName}}</p> 
+      against your name<br>
+      The selected version is <p class="thicker">{{asset.version}} </p>
+   
+   </div>
+ <br>
+ <button type="button"  class="button">CANCEL</button>
+   <button type="button"(click)="ok()" class="button1">OK</button>
+</div>
+
+
+   
+
